@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/creamy"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/monday_act" tools:context=".Monday">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/day_ver_margin"-->
+        <!--android:id="@+id/Day"-->
+        <!--android:text="@string/Monday" android:gravity="center_horizontal|top"-->
+        <!--android:textAlignment="center" android:textSize="@dimen/day_text_size"-->
+        <!--android:textStyle="bold" android:textColor="@color/pasowy"/>-->
+    <!--<GridLayout-->
+        <!--android:rowCount="13" android:columnCount="2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/Day"-->
+        <!--android:background="@color/golebi">-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour8"-->
+            <!--android:text="@string/Eight" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"-->
+            <!--android:layout_row="0" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_column="0"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour9"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="0" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:text="@string/Nine" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour10"-->
+            <!--android:text="@string/Ten" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_row="2"-->
+            <!--android:layout_column="0"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour11"-->
+            <!--android:layout_row="3"-->
+            <!--android:layout_column="0"-->
+            <!--android:text="@string/Eleven" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour12"-->
+            <!--android:text="@string/Twelve" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"-->
+            <!--android:layout_row="4" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_column="0"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour1"-->
+            <!--android:layout_row="5"-->
+            <!--android:layout_column="0" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:text="@string/One" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour2"-->
+            <!--android:text="@string/Two" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_row="6"-->
+            <!--android:layout_column="0"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour3"-->
+            <!--android:layout_row="7"-->
+            <!--android:layout_column="0"-->
+            <!--android:text="@string/Three" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour4"-->
+            <!--android:text="@string/Four" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"-->
+            <!--android:layout_row="8" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_column="0"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour5"-->
+            <!--android:layout_row="9"-->
+            <!--android:layout_column="0" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:text="@string/Five" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour6"-->
+            <!--android:text="@string/Six" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_row="10"-->
+            <!--android:layout_column="0"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour7"-->
+            <!--android:layout_row="11"-->
+            <!--android:layout_column="0"-->
+            <!--android:text="@string/Seven" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:background="@color/creamy"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Hour8PM"-->
+            <!--android:text="@string/Eight" android:textColor="@color/pasowy"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/creamy"-->
+            <!--android:layout_row="12" android:layout_marginBottom="@dimen/spacing"-->
+            <!--android:layout_column="0" />-->
+
+
+
+    <!--</GridLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignRight="@+id/Hour8"-->
+    <!--android:background="@color/pasowy"/>-->
+    <!-- -->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp" android:layout_alignBottom="@id/Day"-->
+    <!--android:id="@+id/Hour_Line8" android:background="@color/pasowy" />-->
+    <!-- -->
+    <!--<TextView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="20dp" -->
+    <!--android:id="@+id/Hour8"-->
+    <!--android:text="@string/Eight" android:textColor="@color/pasowy"-->
+    <!--android:layout_alignParentLeft="true" android:layout_alignTop="@+id/Hour_Line8"/>-->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp" android:layout_alignBottom="@id/Hour8"-->
+    <!--android:id="@+id/Hour_Line9" android:background="@color/pasowy" />-->
+    <!-- -->
+    <!--<TextView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:id="@+id/Hour9"-->
+    <!--android:text="@string/Nine" android:textColor="@color/pasowy"-->
+    <!--android:layout_alignParentLeft="true" android:layout_alignTop="@+id/Hour_Line9"/>-->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp" android:layout_alignBottom="@id/Hour9"-->
+    <!--android:id="@+id/Hour_Line10" android:background="@color/pasowy" />-->
+    <!--<TextView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:id="@+id/Hour10"-->
+    <!--android:text="@string/Ten" android:textColor="@color/pasowy"-->
+    <!--android:layout_alignParentLeft="true" android:layout_alignTop="@+id/Hour_Line10"/>-->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp" android:layout_alignBottom="@id/Hour10"-->
+    <!--android:id="@+id/Hour_Line11" android:background="@color/pasowy" />-->
+    <!--<TextView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:id="@+id/Hour11"-->
+    <!--android:text="@string/Eleven" android:textColor="@color/pasowy"-->
+    <!--android:layout_alignParentLeft="true" android:layout_alignTop="@+id/Hour_Line11"/>-->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp" android:layout_alignBottom="@id/Hour11"-->
+    <!--android:id="@+id/Hour_Line12" android:background="@color/pasowy" />-->
+    <!--<TextView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:id="@+id/Hour12"-->
+    <!--android:text="@string/Twelve" android:textColor="@color/pasowy"-->
+    <!--android:layout_alignParentLeft="true" android:layout_alignTop="@+id/Hour_Line12"/>-->
+    <!-- -->
+
+
+</RelativeLayout>
