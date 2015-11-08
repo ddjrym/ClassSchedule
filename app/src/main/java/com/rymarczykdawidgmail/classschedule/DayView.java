@@ -1,24 +1,11 @@
 package com.rymarczykdawidgmail.classschedule;
 
-import android.app.ActionBar;
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-
-import android.graphics.Path;
 import android.graphics.Rect;
-import android.graphics.RectF;
-import android.support.design.widget.FloatingActionButton;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-
-import java.text.AttributedCharacterIterator;
 
 /**
  * Created by JAN on 2015-10-31.
@@ -105,17 +92,5 @@ public class DayView extends View {
         DayName.setTextAlign(Paint.Align.CENTER);
         canvas.drawText(getResources().getString(R.string.Monday), getWidth() / 2, getHeight() / 10,
                 DayName);
-
-//        Paint buttonAdd = new Paint();
-//        buttonAdd.setColor(getResources().getColor(R.color.malachit));
-//        RectF mOval = new RectF(getWidth() * 13/16, getHeight() - 3 * width,
-//                getWidth() * 15/16, getHeight() - width);
-//        float sweepAngle = 270;
-//        canvas.drawOval(mOval, buttonAdd);
-//        canvas.drawArc(mOval, 269, sweepAngle, false, buttonAdd);
-
-        
-
-
     }
 }

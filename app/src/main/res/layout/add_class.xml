@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/creamy">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class name:"
+        android:id="@+id/className"
+        android:inputType="none"
+        android:textColor="@color/malachit"/>
+
+    <EditText
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/classNameIn"
+        android:editable="true"
+        android:textColor="@color/malachit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start time:"
+        android:id="@+id/startTime"
+        android:textColor="@color/malachit"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/startTimeIN"
+        android:foregroundGravity="fill_horizontal|center_vertical|fill_vertical|center_horizontal|center"
+        android:amPmTextColor="@color/malachit"
+        android:numbersTextColor="@color/malachit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End time:"
+        android:id="@+id/endTime"
+        android:textColor="@color/malachit"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:id="@+id/endTimeIn"
+        android:foregroundGravity="fill_horizontal|center_vertical|fill_vertical|center_horizontal|center"
+        android:amPmTextColor="@color/malachit"
+        android:numbersTextColor="@color/malachit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day:"
+        android:id="@+id/day"
+        android:textColor="@color/malachit"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1.06">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Day">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:id="@+id/isMonday"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textColor="@color/malachit"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:id="@+id/isTuesday"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textColor="@color/malachit"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:id="@+id/isWednesday"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textColor="@color/malachit"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:id="@+id/isThursday"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textColor="@color/malachit"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:id="@+id/isFriday"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textColor="@color/malachit"/>
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:text="Add this class"
+        android:id="@+id/Confirm"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/creamy"
+        android:background="@color/malachit"/>
+
+</LinearLayout>
