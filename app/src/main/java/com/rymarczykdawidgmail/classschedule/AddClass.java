@@ -58,7 +58,7 @@ public class AddClass extends Activity {
     private boolean isFulfillCorrectly() {
         return WhichDay.getText().toString() != null && ClassName.getText().toString() != null
                 && StartTime.getCurrentHour() <= EndTime.getCurrentHour()
-                && StartTime.getCurrentHour() > 8 && EndTime.getCurrentHour() <= 20
+                && StartTime.getCurrentHour() >= 8 && EndTime.getCurrentHour() <= 20
                 && ((StartTime.getCurrentHour() == EndTime.getCurrentHour()
                 && StartTime.getCurrentMinute() >= EndTime.getCurrentMinute())? 0==1 : 1==1);
     }

@@ -3,8 +3,10 @@ package com.rymarczykdawidgmail.classschedule;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 
 /**
@@ -18,6 +20,8 @@ public class DayView extends View {
         super(context);
         this.FirstDay = (monday) context;
     }
+
+
 
     private float width;
     private float height;
@@ -41,17 +45,23 @@ public class DayView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
 
+        Display display = this.getDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        Integer getHeight = size.y;
+        Integer getWidth = size.x;
+
         Paint background = new Paint();
         background.setColor(getResources().getColor(R.color.creamy));
-        canvas.drawRect(0, 0, getWidth(), getHeight(), background);
+        canvas.drawRect(0, 0, getWidth, getHeight(), background);
 
         Paint pasowy = new Paint();
         pasowy.setColor(getResources().getColor(R.color.pasowy));
 
-        canvas.drawLine(getWidth() / 7, getHeight() / 8, getWidth() / 7,
-                getHeight() / 16 * 15, pasowy);
+        canvas.drawLine(getWidth / 7, getHeight / 8, getWidth / 7,
+                getHeight / 16 * 15, pasowy);
         for (int i = 2; i < 15; i++) {
-            canvas.drawLine(0, i * getHeight() / 16, getWidth(), i * getHeight() / 16, pasowy);
+            canvas.drawLine(0, i * getHeight / 16, getWidth, i * getHeight / 16, pasowy);
         }
 
         Paint hours = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -78,10 +88,11 @@ public class DayView extends View {
 
 
         Paint.FontMetrics fm = hours.getFontMetrics();
-        float x = getHeight() / 10 / 2;
-        float y = height / 2 + 5;
-        for (int i = 2; i < 15; i++) {
-            canvas.drawText(hoursTab[i - 2], x, i * height + y, hours);
+
+        for (int i = 3; i < 16; i++) {
+            float x = getHeight / 10 / 2;
+            float y = getHeight / 16;
+            canvas.drawText(hoursTab[i - 3], x, i * y - 5, hours);
         }
 
         Paint DayName = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -90,7 +101,7 @@ public class DayView extends View {
         DayName.setTextSize(height);
         DayName.setTextScaleX(height / width);
         DayName.setTextAlign(Paint.Align.CENTER);
-        canvas.drawText(getResources().getString(R.string.Monday), getWidth() / 2, getHeight() / 10,
+        canvas.drawText(getResources().getString(R.string.Monday), getWidth / 2, getHeight / 10,
                 DayName);
     }
 }
